@@ -4,11 +4,13 @@ Name | StudentID
 Nguyễn Văn Hoài Nam | 1712607
 Phan Thanh Quan | 1712686
 ## Our question:
-Liệu mô hình mạng neural có thể hoàn thành tốt việc dự đoán giá cổ phiếu hay không?
+Can a neural network perporm good forecasts for stock price?
+
 ## Insight:
-Dự đoán giá cổ phiếu luôn là một vấn đề được quan tâm nhưng có rất ít model hiệu quả, việc dự đoán thành công có thể có nhiều lợi ích như xây dựng bot tín hiệu trade,...
+Stock Price Prediction is a interesting subject but there are few public models can give decent results. High accuracy prediction gain profits in term of making money, building buy/sell signal bot,...
+
 ## How we collect data:
-We crawl from this site [investing](https://www.investing.com). The Volume can extract from source code and others (Date, Close, Open, High, Low, Change_%) can be easily taken from text data.
+We crawl from this site [investing](https://www.investing.com). The Volume can be extracted from source code and other fields (Date, Close, Open, High, Low, Change_%) can be easily taken from text data.
 
 ## About the data:
 stock_price.csv: 5000 rows, 7 columns like data from [investing IBM URL](https://www.investing.com/equities/ibm-historical-data) between Feb 15, 2001 to Dec 30, 2020
@@ -29,8 +31,8 @@ High|float|Higest price in that day
 Low|float|Lowest price in that day
 Vol|int|Volume: amount of money transacted in that day
 Change_%|float|Closing price compare to yesterday in percentage
-SMA_20|float|Simple moving average tính theo 20 ngày (trung bình của 20 ngày trước)
-EMA_20|float|Exponential moving average tính theo 20 ngày (giống SMA nhưng tính theo công thức mũ)
+SMA_20|float|Simple moving average of 20 before
+EMA_20|float|Exponential moving average of 20 before (like SMA but with exponential weighted)
 BB_upper_20, BB_lower_20|float|Bollinger Bands
 OBV|float|On-Balance Volume
 MACD_12_26, MACDsign_12_26, MACDdiff_12_26|float|Moving average convergence divergence (một loại indicator phát hiện đổi chiều trend theo nhóm hiểu, được nhiều người đánh giá là lagging indicator, mọi indicator đều là lagging indicator nhưng MACD có vẻ là lag nhất, cũng hợp lý vì đảo cả trend thì trend đó có thể sẽ diễn ra rất lâu)
