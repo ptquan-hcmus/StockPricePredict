@@ -25,6 +25,7 @@ Số dòng: 4967, số cột: 14, cột cần dự đoán là Close (giá đóng
 ## Tự đánh giá
 Model tổng quan hoạt động khá tốt trong việc dự đoán trend, còn giá dự đoán thì độ chính xác không được cao, chi tiết mô tả trong notebook StockPredictModel.ipynb
 ## Phân công công việc
+Nguyễn Văn Hoài Nam: Crawl dữ liệu, tính indicator, xử lý và trực quan
 Phan Thanh Quan: Xây dựng và đánh giá model
 ## Hướng dẫn chạy file notebook
 - File StockPredictModelJupyterLab.ipynb: Chọn Restart & Run All
