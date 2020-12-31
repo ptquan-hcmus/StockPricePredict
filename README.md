@@ -2,7 +2,7 @@
 Name | StudentID
 --- | ---
 Nguyễn Văn Hoài Nam | 1712607
-Phan Thanh Quan | MSSV:1712686
+Phan Thanh Quan | 1712686
 ## Câu hỏi đặt ra:
 Liệu mô hình mạng neural có thể hoàn thành tốt việc dự đoán giá cổ phiểu hay không?
 ## Ý nghĩa:
