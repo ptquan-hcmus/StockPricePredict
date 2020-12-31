@@ -9,7 +9,7 @@ Liệu mô hình mạng neural có thể hoàn thành tốt việc dự đoán g
 Dự đoán giá cổ phiếu luôn là một vấn đề được quan tâm nhưng có rất ít model hiệu quả, việc dự đoán thành công có thể có nhiều lợi ích như xây dựng bot tín hiệu trade,...
 ## Cách thức thu thập dữ liệu:
 ## Tổng quan dữ liệu:
-Số dòng: 4967, số cột: 13, cột cần dự đoán là Close (giá đóng)
+Số dòng: 4967, số cột: 14, cột cần dự đoán là Close (giá đóng)
 ## Ý nghĩa của cột dữ liệu
 - Close: Giá đóng; Kiểu float
 - Open: Giá mở; Kiểu float
