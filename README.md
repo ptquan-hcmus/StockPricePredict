@@ -4,7 +4,7 @@ Name | StudentID
 Nguyễn Văn Hoài Nam | 1712607
 Phan Thanh Quan | 1712686
 ## Câu hỏi đặt ra:
-Liệu mô hình mạng neural có thể hoàn thành tốt việc dự đoán giá cổ phiểu hay không?
+Liệu mô hình mạng neural có thể hoàn thành tốt việc dự đoán giá cổ phiếu hay không?
 ## Ý nghĩa:
 Dự đoán giá cổ phiếu luôn là một vấn đề được quan tâm nhưng có rất ít model hiệu quả, việc dự đoán thành công có thể có nhiều lợi ích như xây dựng bot tín hiệu trade,...
 ## Cách thức thu thập dữ liệu:
@@ -27,6 +27,9 @@ Model tổng quan hoạt động khá tốt trong việc dự đoán trend, còn
 ## Phân công công việc
 Phan Thanh Quan: Xây dựng và đánh giá model
 ## Hướng dẫn chạy file notebook
-- File StockPredictModel.ipynb: Chọn Restart & Run All
+- File StockPredictModelJupyterLab.ipynb: Chọn Restart & Run All
 
   Lưu ý: Comment cell code đầu tiên của mục 3 **Đánh giá model** (có chú thích trong cell code) nếu không chạy đánh giá trung bình 20 lần chạy (khá tốn thời gian ~20 phút, em đã comment lại và để kết quả chạy trước ở dưới cell đó), tất cả các cell còn lại chạy tương đối nhanh.
+  
+## Disclaimer:
+Đồ án chỉ phục vụ cho việc nghiên cứu và không chịu bất kỳ trách nhiệm nào với việc đầu tư của bạn, tự tìm hiểu và sử dụng kết quả một cách thận trọng. **This is not a financial advice!**
