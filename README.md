@@ -1,5 +1,6 @@
 **Stock Price Predict Project**
 Name | StudentID
+--- | ---
 Nguyễn Văn Hoài Nam | 1712607
 Phan Thanh Quan | 1712686
 ## Câu hỏi đặt ra:
