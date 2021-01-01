@@ -21,7 +21,7 @@ stock_price_with_indicators_nan.csv: 5000 rows, 16 columns. stock_price.csv with
 stock_price_with_indicators.csv: 4967 rows, 16 columns. stock_price_with_indicators_nan.csv but drop NaN values.  
 The columns use for prediction is Close.  
 
-## Ý nghĩa của cột dữ liệu
+## Columns description
 ||Columns|Type|Meaning
 ---|---|---|---
 1|Date|string|Day month year
@@ -46,7 +46,8 @@ Nguyễn Văn Hoài Nam: Crawl data, calculate indicator, preprocess and visuali
 Phan Thanh Quan: Build and validate model.  
 
 ## Running instruction
-- StockPredictModelJupyterLab.ipynb: On Jupyter Notebook or Jupyter Lab, Click Restart & Run All.  
+- StockPredictModelJupyterLab.ipynb: On Jupyter Notebook or Jupyter Lab, Click Restart & Run All.
+
 Note: Comment cell code đầu tiên của mục 3 **Đánh giá model** (có chú thích trong cell code) nếu không chạy đánh giá trung bình 20 lần chạy (khá tốn thời gian ~20 phút, em đã comment lại và để kết quả chạy trước ở dưới cell đó), tất cả các cell còn lại chạy tương đối nhanh.
   
 ## Disclaimer:
