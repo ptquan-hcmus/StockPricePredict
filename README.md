@@ -22,7 +22,7 @@ stock_price_with_indicators.csv: 4967 rows, 16 columns. stock_price_with_indicat
 The columns use for prediction is Close.  
 
 ## Ý nghĩa của cột dữ liệu
-|Columns|Type|Meaning
+||Columns|Type|Meaning
 ---|---|---|---
 1|Date|string|Day month year
 2|Close|float|Closing price at the end of a day
