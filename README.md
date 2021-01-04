@@ -13,7 +13,8 @@ Stock Price Prediction is a interesting subject but there are few public models 
 We crawl from this site [investing](https://www.investing.com).  
 We use selenium to interact with calendar and set the start day in the past to get 5000 records.  
 We use regular expression to extract Volume from source code.  
-Other fields (Date, Close, Open, High, Low, Change_%) can be easily taken from text between tag using selenium methods.
+Other fields (Date, Close, Open, High, Low, Change_%) can be easily taken from text between tag using selenium methods.  
+Data is quite clean, we just have to remove some NaN left after indicators calculation.
 
 ## About the data:
 `stock_price.csv`: 5000 rows, 7 columns like data from [Historical price of IBM quote](https://www.investing.com/equities/ibm-historical-data) between Feb 15, 2001 to Dec 30, 2020.  
@@ -36,7 +37,7 @@ The columns use for prediction is Close.
 10|BB_upper_20, BB_lower_20|float|Bollinger Bands of 20 days before. This is a type of Mean Reversion Indicators (lagging) which measure how far a price swing will stretch before a counter impulse triggers a retracement.
 11|OBV|float|On-Balance Volume is a type of Volume indicators (leading or lagging) which calculate trades and quantify whether bulls (rising) or bears (falling) are in control.
 12|MACD_12_26, MACDsign_12_26, MACDdiff_12_26|float|Moving Average Convergence Divergence with default setting fast period=12 days, slow period=26 days and signal period=9 days. This is a type of Momentum indicators (leading) which evaluate the speed of price change over time.
-13|RSI_14|float|Relative Strength Index of 14 days before. This is a type of relative strength indicators (leading) measure oscillations in buying and selling pressure. (tạm dịch chỉ số sức mạnh tương đối, có thể đây là một trong những indicator được sử dụng nhiều nhất, có thể dự đoán trend, dự đoán giá đảo chiều dựa vào convergence và divergence gần giống như MACD,...)
+13|RSI_14|float|Relative Strength Index default 14 days before. This is a type of relative strength indicators (leading) measure oscillations in buying and selling pressure. This could be one of the most use indicator to predict trend, price base on convergence and divergence like MACD.
 
 ## Self-assessment
 Overall, Model gets a decent result in trend prediction but the accuracy of forecasted closing price not quite high, details in StockPredictModel.ipynb notebook
@@ -48,9 +49,7 @@ Nguyễn Văn Hoài Nam | Crawl data, calculate indicator and visualization.
 Phan Thanh Quan | Build and validate model.  
 
 ## Running instruction
-`StockPredictModelJupyterLab.ipynb`: On Jupyter Notebook or Jupyter Lab, Click Restart & Run All.
-
-Note: Comment cell code đầu tiên của mục 3 **Đánh giá model** (có chú thích trong cell code) nếu không chạy đánh giá trung bình 20 lần chạy (khá tốn thời gian ~20 phút, em đã comment lại và để kết quả chạy trước ở dưới cell đó), tất cả các cell còn lại chạy tương đối nhanh.
+`StockPredictModelJupyterLab.ipynb`: On Jupyter Notebook or Jupyter Lab, Click Restart & Run All. Note: We comment out the firse cell of heading 3 **Đánh giá model** (There is a note in that cell, too). If you don't need to validate again of 20 runs (quite time-consuming ~20 mins, so I commented the previous result in the next cell), other cells run normal to fast.
   
 ## Disclaimer:
 This project is for study/research purpose. We don't take any responsibility with your investment. Please read and use our result considerably **This is not a financial advice!**
