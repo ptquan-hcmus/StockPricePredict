@@ -42,8 +42,9 @@ The columns use for prediction is Close.
 Overall, Model gets a decent result in trend prediction but the accuracy of forecasted closing price not quite high, details in StockPredictModel.ipynb notebook
 
 ## Work
---- | ---
+
 Nguyễn Văn Hoài Nam | Crawl data, calculate indicator, preprocess and visualization.  
+---|---
 Phan Thanh Quan | Build and validate model.  
 
 ## Running instruction
