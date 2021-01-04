@@ -43,7 +43,7 @@ Overall, Model gets a decent result in trend prediction but the accuracy of fore
 
 ## Work
 
-Nguyễn Văn Hoài Nam | Crawl data, calculate indicator, preprocess and visualization.  
+Nguyễn Văn Hoài Nam | Crawl data, calculate indicator and visualization.  
 ---|---
 Phan Thanh Quan | Build and validate model.  
 
