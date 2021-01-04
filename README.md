@@ -44,10 +44,10 @@ Overall, Model gets a decent result in trend prediction but the accuracy of fore
 ## Work
 --- | ---
 Nguyễn Văn Hoài Nam | Crawl data, calculate indicator, preprocess and visualization.  
-Phan Thanh Quan \ Build and validate model.  
+Phan Thanh Quan | Build and validate model.  
 
 ## Running instruction
-- `StockPredictModelJupyterLab.ipynb`: On Jupyter Notebook or Jupyter Lab, Click Restart & Run All.
+`StockPredictModelJupyterLab.ipynb`: On Jupyter Notebook or Jupyter Lab, Click Restart & Run All.
 
 Note: Comment cell code đầu tiên của mục 3 **Đánh giá model** (có chú thích trong cell code) nếu không chạy đánh giá trung bình 20 lần chạy (khá tốn thời gian ~20 phút, em đã comment lại và để kết quả chạy trước ở dưới cell đó), tất cả các cell còn lại chạy tương đối nhanh.
   
