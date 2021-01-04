@@ -16,9 +16,9 @@ We use regular expression to extract Volume from source code.
 Other fields (Date, Close, Open, High, Low, Change_%) can be easily taken from text between tag using selenium methods.
 
 ## About the data:
-stock_price.csv: 5000 rows, 7 columns like data from [investing IBM URL](https://www.investing.com/equities/ibm-historical-data) between Feb 15, 2001 to Dec 30, 2020.  
-stock_price_with_indicators_nan.csv: 5000 rows, 16 columns. stock_price.csv with indicators calculated from Close column (Closing price - giá chốt phiên).  
-stock_price_with_indicators.csv: 4967 rows, 16 columns. stock_price_with_indicators_nan.csv but drop NaN values.  
+`stock_price.csv`: 5000 rows, 7 columns like data from [Historical price of IBM quote](https://www.investing.com/equities/ibm-historical-data) between Feb 15, 2001 to Dec 30, 2020.  
+`stock_price_with_indicators_nan.csv`: 5000 rows, 16 columns. stock_price.csv with indicators calculated from Close column (Closing price - giá chốt phiên).  
+`stock_price_with_indicators.csv`: 4967 rows, 16 columns. stock_price_with_indicators_nan.csv but drop NaN values.  
 The columns use for prediction is Close.  
 
 ## Columns description
@@ -42,11 +42,12 @@ The columns use for prediction is Close.
 Overall, Model gets a decent result in trend prediction but the accuracy of forecasted closing price not quite high, details in StockPredictModel.ipynb notebook
 
 ## Work
-Nguyễn Văn Hoài Nam: Crawl data, calculate indicator, preprocess and visualization.  
-Phan Thanh Quan: Build and validate model.  
+--- | ---
+Nguyễn Văn Hoài Nam | Crawl data, calculate indicator, preprocess and visualization.  
+Phan Thanh Quan \ Build and validate model.  
 
 ## Running instruction
-- StockPredictModelJupyterLab.ipynb: On Jupyter Notebook or Jupyter Lab, Click Restart & Run All.
+- `StockPredictModelJupyterLab.ipynb`: On Jupyter Notebook or Jupyter Lab, Click Restart & Run All.
 
 Note: Comment cell code đầu tiên của mục 3 **Đánh giá model** (có chú thích trong cell code) nếu không chạy đánh giá trung bình 20 lần chạy (khá tốn thời gian ~20 phút, em đã comment lại và để kết quả chạy trước ở dưới cell đó), tất cả các cell còn lại chạy tương đối nhanh.
   
